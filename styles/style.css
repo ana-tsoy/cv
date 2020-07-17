@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Glacial Indifference Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Glacial Indifference Regular"), url("../fonts/glacial-indifference/GlacialIndifference-Regular.woff") format("woff"); }
+@font-face {
+  font-family: "Glacial Indifference Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Glacial Indifference Bold"), url("../fonts/glacial-indifference/GlacialIndifference-Bold.woff") format("woff"); }
+html {
+  font-family: "Glacial Indifference Regular"; }
+
+body {
+  border: 0;
+  margin: 0;
+  padding-bottom: 500px; }
+  body .banner {
+    background-image: url("../images/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 38.0487804878%; }
+  body section {
+    min-height: 500px; }
+    body section:focus {
+      outline: none; }
+  body .about {
+    border: 1px solid black;
+    background-color: #fff5c8; }
+  body .contact {
+    border: 1px solid black;
+    background-color: #c3d9ff; }
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding: 1em;
+  background-color: transparent;
+  font-family: "Glacial Indifference Bold";
+  font-size: 1.2rem;
+  text-align: right;
+  z-index: 2000;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out; }
+  .menu-bar.min {
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    z-index: 2000; }
+  .menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; }
+    .menu-bar ul li {
+      float: left;
+      margin-right: 2em;
+      display: flex;
+      flex-direction: column; }
+      .menu-bar ul li:after {
+        content: "";
+        background-color: black;
+        width: 100%;
+        height: 2px;
+        visibility: hidden;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s; }
+      .menu-bar ul li:hover:after {
+        visibility: visible;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1); }
+      .menu-bar ul li a {
+        text-decoration: none;
+        font-family: inherit;
+        color: black; }
+
+.art {
+  padding: 4rem;
+  background-color: gray; }
+  .art img.exhibit {
+    max-height: 400px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */

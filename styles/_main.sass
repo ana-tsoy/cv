@@ -1,0 +1,25 @@
+$brd: 0
+
+html
+    font-family: 'Glacial Indifference Regular'
+
+body
+    border: $brd
+    margin: 0
+    padding-bottom: 500px
+    
+    .banner
+        +image-banner('../images/bg.png')
+
+    section
+        min-height: 500px
+        &:focus
+            outline: none
+
+    .about
+        border: 1px solid black
+        background-color: #fff5c8
+
+    .contact
+        border: 1px solid black
+        background-color: #c3d9ff

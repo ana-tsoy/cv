@@ -29,9 +29,6 @@ body {
   body .about {
     border: 1px solid black;
     background-color: #fff5c8; }
-  body .contact {
-    border: 1px solid black;
-    background-color: #c3d9ff; }
 
 .menu-bar {
   position: fixed;
@@ -91,5 +88,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block; }
+
+.contact {
+  background-color: white;
+  color: black; }
+  .contact form > .container {
+    display: flex;
+    flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

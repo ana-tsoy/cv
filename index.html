@@ -27,10 +27,13 @@
     </script>
 
     <link rel="stylesheet" href="styles/style.css">
-    <script src="js/navigation.js"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <script src="js/carousel.js" type="text/javascript"></script>
+    <script src="js/formSubmission.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
+        <div class="banner" id="home"></div>
         <nav class="menu-bar">
             <ul>
                 <li><a href="index.html#home">HOME</a></li>
@@ -40,9 +43,6 @@
             <ul>
         </nav>
     </header>
-
-    <div class="banner" id="home"></div>
-
     <section id="art" class="art">
         <div class="container">
             <div id="cozy-carousel" class="carousel slide" data-ride="carousel">
@@ -78,6 +78,20 @@
     </section>
     <section id="contact" class="contact">
         <h1>Contact me</h1>
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe14x4sjJ-xedVA8TPDAcjPh1mw-5AAKEU3poJrCN2q8nY93w/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="container">
+                <label for="entry.2120695236">Name</label>
+                <input type="text" name="entry.2120695236" id="entry.2120695236">
+                <label for="entry.1073623435">Email</label>
+                <input type="email" name="entry.1073623435" id="entry.1073623435">
+                <label for="entry.1537229789">Subject</label>
+                <input type="text" name="entry.1537229789" id="entry.1537229789">
+                <label for="entry.1377785987">Message</label>
+                <input type="text" name="entry.1377785987" id="entry.1377785987">
+                <input type="submit" value="Submit">
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"> </iframe>
+            </div>
+        </form>
     </section>
     <footer>
     </footer>
